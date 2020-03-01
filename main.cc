@@ -81,10 +81,6 @@ int main(int argc, char* argv[]) {
 
       // Run the script to get the result.
       v8::Local<v8::Value> result = script->Run(context).ToLocalChecked();
-
-      // Convert the result to an UTF8 string and print it.
-      v8::String::Utf8Value utf8(isolate, result);
-      printf("%s\n", *utf8);
     }
   }
 
