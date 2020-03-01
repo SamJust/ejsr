@@ -1,10 +1,10 @@
-#EJSR
+# EJSR
 
-##How to build
-Visit the dedecaded build [file](http://localhost:3000 "How to build").
+## How to build
+Visit the dedecaded build [file](https://github.com/SamJust/ejsr/blob/master/build/build.md "How to build").
 
-##Testing
+## Testing
 No testing is yet implemented.
 
-##License
-License [file](http://localhost:3000 "License").
+## License
+License [file](https://github.com/SamJust/ejsr/blob/master/LICENSE "License").

@@ -1,9 +1,9 @@
-#How to build
+# How to build
 
 ## Prerequisites
 g++ C++ compiler must be installed on your system
 
-##MacOS
+## MacOS
 
 1. Follow [this][v8_build] guide to pull and build the V8 locally on your machine
 2. Remap all of the **/Users/apple/v8/v8** to your own paths
