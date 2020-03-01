@@ -1,6 +1,6 @@
-#How to build
+# How to build
 
-##MacOS
+## MacOS
 
 1. Follow [this][v8_build] guide to pull and build the V8 locally on your machine
 2. Run the
