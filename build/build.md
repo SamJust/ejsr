@@ -6,7 +6,7 @@ g++ C++ compiler must be installed on your system
 ## MacOS
 
 1. Follow [this][v8_build] guide to pull and build the V8 locally on your machine
-2. Remap all of the in the *build.sh* **/Users/apple/v8/v8** to your own paths
+2. Remap all of the **/Users/apple/v8/v8** in the *build.sh* to your own paths
 3. Run the build.sh script
 4. Run the binary with 
 ```
