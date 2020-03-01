@@ -6,11 +6,7 @@
 #include "libplatform/libplatform.h"
 #include "v8.h"
 
-void log(const v8::FunctionCallbackInfo<v8::Value>& args) {
-  bool isString = args[0] -> IsString();
-  printf("Is argument string %d\n", isString);
-  args.GetReturnValue().Set(v8::String::NewFromUtf8(args.GetIsolate(), "A VALUE"));
-}
+#include "global.h"
 
 int main(int argc, char* argv[]) {
   if (argc < 2) {
@@ -65,8 +61,9 @@ int main(int argc, char* argv[]) {
     // Enter the context for compiling and running the hello world script.
     v8::Context::Scope context_scope(context);
 
-    v8::Local<v8::FunctionTemplate> function_template = v8::FunctionTemplate::New(isolate, log);
-    isolate -> GetCurrentContext() -> Global() -> Set(v8::String::NewFromUtf8(isolate, "log"), function_template -> GetFunction());
+    {
+      ejsr::attach_console(isolate);
+    }
 
     {
       // Create a string containing the JavaScript source code.

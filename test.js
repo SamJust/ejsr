@@ -1,1 +1,1 @@
-log(log());
+console.log("Yay, a logger!");
