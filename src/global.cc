@@ -7,6 +7,7 @@ using namespace ejsr;
 void log(const FunctionCallbackInfo<Value>& args) {
   String::Utf8Value str(args.GetIsolate(), args[0]);
   printf("%s", *str);
+  printf("\n");
   // args.GetReturnValue().Set(v8::String::NewFromUtf8(args.GetIsolate(), "A VALUE"));
 }
 
